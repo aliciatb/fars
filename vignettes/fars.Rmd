@@ -10,16 +10,27 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r setup, include = FALSE}
+```{r setup, include = FALSE, echo=FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
+# FARS (Fatality Analysis Reporting System)
 
 ## Program Info
 
 The United States Department of Transportation FARS dataset is a nationwide census providing NHTSA, Congress and the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+
+## Package Usage
+
+This package allows users to -
+
+1. Read fars files directly by passing the full path with `fars_read("/data/accident_2015.csv.bz2")`
+2. Generate the filename for a given year with `make_filename('2015')`
+3. Load multiple years of data with `fars_read_years('2013','2014')`
+4. Get a summary view of the data by month and year with function `fars_summarize_years(c('2014','2015'))`
+5. Visualize the data by state and year with function `fars_map_state('53', '2015')`
 
 ## Data Notes
 * All years of data are available from [Fars FTP site](ftp://ftp.nhtsa.dot.gov/fars/)
