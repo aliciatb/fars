@@ -25,10 +25,6 @@ The United States Department of Transportation FARS dataset is a nationwide cens
 * All years of data are available from [Fars FTP site](ftp://ftp.nhtsa.dot.gov/fars/)
 * [Auxiliary Datasets Analytical User’s Manual 2007-2016](http://www-nrd.nhtsa.dot.gov/Cats/listpublications.aspx?Id=J&ShowBy=DocType)
 
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(data, 10))
-```
-
 ## Additional Resources
 
 * https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars
