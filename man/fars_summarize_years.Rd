@@ -22,7 +22,9 @@ Invalid years will result in a warning message with nothing returned. If working
 has not been set, a warning message will result for valid file names.
 }
 \examples{
+ \dontrun{
 fars_summarize_years(c('2014','2015'))
 fars_summarize_years(years = c('2014','2015'))
+}
 
 }

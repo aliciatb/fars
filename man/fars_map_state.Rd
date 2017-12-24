@@ -23,7 +23,9 @@ This function plots any accidents for a single state and year.
 An invalid year and/or state code will result in a warning message the failed condition.
 }
 \examples{
+ \dontrun{
 fars_map_state('53', '2015')
 fars_map_state(state.num = '53', year = '2015')
+}
 
 }

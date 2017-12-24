@@ -98,8 +98,10 @@ fars_read_years <- function(years) {
 #' has not been set, a warning message will result for valid file names.
 #'
 #' @examples
+#'  \dontrun{
 #' fars_summarize_years(c('2014','2015'))
 #' fars_summarize_years(years = c('2014','2015'))
+#'}
 #'
 #' @importFrom dplyr %>% bind_rows group_by summarize
 #' @importFrom tidyr spread
@@ -127,8 +129,10 @@ fars_summarize_years <- function(years) {
 #' @note An invalid year and/or state code will result in a warning message the failed condition.
 #'
 #' @examples
+#'  \dontrun{
 #' fars_map_state('53', '2015')
 #' fars_map_state(state.num = '53', year = '2015')
+#' }
 #'
 #' @importFrom dplyr filter
 #' @importFrom maps map
