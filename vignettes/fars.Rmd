@@ -37,7 +37,9 @@ ggplot(data, aes(PEDS)) +
   labs(x = "Pedestrian Accidents", y = "Count", title = "Fatalities Count")
 ```
 
-## Data
+## Data Notes
+* All years of data are available from [Fars FTP site](ftp://ftp.nhtsa.dot.gov/fars/)
+* [Auxiliary Datasets Analytical User’s Manual 2007-2016](http://www-nrd.nhtsa.dot.gov/Cats/listpublications.aspx?Id=J&ShowBy=DocType)
 
 ```{r, echo=FALSE, results='asis'}
 knitr::kable(head(data, 10))
