@@ -20,7 +20,9 @@ and file name like (\code{filename = "accident_2015.csv.bz2"}).
 Incorrect path to filename will result in the message [File Name] does not exist.
 }
 \examples{
-fars_read("/Users/alicia.brown/r_programming/data 4/accident_2015.csv.bz2")
-fars_read(filename = "/Users/alicia.brown/r_programming/data 4/accident_2015.csv.bz2")
+\dontrun{
+fars_read("/data/accident_2015.csv.bz2")
+fars_read(filename = "/data/accident_2015.csv.bz2")
+}
 
 }
