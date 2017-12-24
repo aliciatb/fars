@@ -71,6 +71,9 @@ make_filename <- function(year) {
 #'
 #' @export
 fars_read_years <- function(years) {
+  MONTH = NULL
+  year = NULL
+  n = NULL
   lapply(years, function(year) {
     file <- make_filename(year)
     tryCatch({
@@ -108,6 +111,9 @@ fars_read_years <- function(years) {
 #'
 #' @export
 fars_summarize_years <- function(years) {
+  MONTH = NULL
+  year = NULL
+  n = NULL
   dat_list <- fars_read_years(years)
   dplyr::bind_rows(dat_list) %>%
     dplyr::group_by(year, MONTH) %>%
@@ -140,6 +146,7 @@ fars_summarize_years <- function(years) {
 #'
 #' @export
 fars_map_state <- function(state.num, year) {
+  STATE = NULL
   filename <- make_filename(year)
   data <- fars_read(filename)
   state.num <- as.integer(state.num)
