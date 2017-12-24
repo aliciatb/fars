@@ -21,22 +21,6 @@ knitr::opts_chunk$set(
 
 The United States Department of Transportation FARS dataset is a nationwide census providing NHTSA, Congress and the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
 
-
-## Plots
-
-```{r, fig.show='hold', echo=FALSE}
-library(fars)
-library(ggplot2)
-data_2015 <- fars_read("/Users/alicia.brown/r_programming/data 4/accident_2015.csv.bz2")
-data_2014 <- fars_read("/Users/alicia.brown/r_programming/data 4/accident_2014.csv.bz2")
-data_2013 <- fars_read("/Users/alicia.brown/r_programming/data 4/accident_2013.csv.bz2")
-data <- rbind(data_2013,data_2014)
-fact_year <- factor(data$YEAR)
-ggplot(data, aes(PEDS)) +
-  geom_bar() +
-  labs(x = "Pedestrian Accidents", y = "Count", title = "Fatalities Count")
-```
-
 ## Data Notes
 * All years of data are available from [Fars FTP site](ftp://ftp.nhtsa.dot.gov/fars/)
 * [Auxiliary Datasets Analytical User’s Manual 2007-2016](http://www-nrd.nhtsa.dot.gov/Cats/listpublications.aspx?Id=J&ShowBy=DocType)
