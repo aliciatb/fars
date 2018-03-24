@@ -18,5 +18,4 @@ Imports: dplyr,
     tidyr,
     maps,
     graphics,
-    ggplot2,
-    utils
+    ggplot2
